@@ -23,3 +23,9 @@ Template.Recipe.events({
     // Session.set('editMode', !Session.get('editMode'));
   }
 });
+
+Template.Recipes.events({
+  'click .new-recipe': () => {
+    Session.set('newRecipeVar', true);
+  }
+});
