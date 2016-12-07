@@ -4,12 +4,13 @@
     <p>{{desc}}</p>
     <p>
       <ul>
-      {{#each ingredients}}
-        <li>
-          <span class="ingredient">{{name}}: {{amount}}</span>
-        </li>
-      {{/each}}
+        {{#each ingredients}}
+          <li>
+            <span class="ingredient">{{name}}: {{amount}}</span>
+          </li>
+        {{/each}}
     </ul>
     </p>
+    <a href="/recipe/{{_id}}">View Details</a>
   </article>
 </template>
