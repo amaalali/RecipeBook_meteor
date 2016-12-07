@@ -35,7 +35,7 @@ RecipeSchema = new SimpleSchema({
     defaultValue: false,
     optional: true,
     autoform: {
-      // type: "hidden"
+      type: "hidden"
     }
   },
   author: {
