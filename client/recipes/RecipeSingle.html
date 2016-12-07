@@ -1,15 +1,22 @@
 <template name="RecipeSingle">
   <h1>{{recipe.name}}</h1>
-  <h2><i class="fa fa-comment"></i> Description</h2>
-  <h2><i class="fa fa-list"></i> Recipe List</h2>
-  <p>
-    <ul>
-      {{#each ingredients}}
-        <li>
-          <span class="ingredient">{{name}}: {{amount}}</span>
-        </li>
-      {{/each}}
-    </ul>
-  </p>
+  <h2><i class="fa fa-pencil"></i> Description</h2>
+    <p>
+      {{recipe.desc}}
+    </p>
 
+  <p>
+    <h2><i class="fa fa-list"></i> Recipe List</h2>
+    {{#if ingredients}}
+      <ul>
+        {{#each ingredients}}
+          <li>
+            <span class="ingredient">{{name}}: {{amount}}</span>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      No ingredients listed.
+    {{/if}}
+  </p>
 </template>
