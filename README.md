@@ -3,11 +3,11 @@
 A recipe book app built in JavaScript using the Meteor framework.
 
 Functionality:
-- User can add a recipe
-- User can select items to add to menu
-- Selected items are higlighted
-- Recipes added to Menu are listed in the Menu page
-- On Shopping List page, Ingredients are displayed based on items added to the menu.
+- [x] User can add a recipe
+- [x] User can select items to add to menu
+- [x] Selected items are higlighted
+- [x] Recipes added to Menu are listed in the Menu page
+- [x] On Shopping List page, Ingredients are displayed based on items added to the menu.
 
 **Recipe Book main page**
 
